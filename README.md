@@ -13,6 +13,7 @@ Installed SFML under Fedora 38 and using CodeBlocks IDE for developing code.
 - lsfml-graphics
 - lsfml-window
 - lsfml-system
+- lsfml-audio
 
 ## Applications
 
