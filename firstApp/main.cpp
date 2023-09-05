@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(640, 480), "Exa1");
+    sf::RenderWindow window(sf::VideoMode(640, 480), "First App");
     sf::CircleShape shape;
     shape.setRadius(40.f);
     shape.setPosition(100.f, 100.f);
