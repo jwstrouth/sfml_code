@@ -17,6 +17,7 @@ Installed SFML under Fedora 38 and using CodeBlocks IDE for developing code.
 ## Applications
 
 - firstApp
+- Ch1Ex1
 
 ## References
 
