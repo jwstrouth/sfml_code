@@ -22,3 +22,5 @@ Installed SFML under Fedora 38 and using CodeBlocks IDE for developing code.
 
 - SFML Game Development by Artur Moreira, Henrik Vogelius Hansson, and 
 Jan Haller
+
+- SFML Documentation https://www.sfml-dev.org/documentation/2.6.0/index.php
