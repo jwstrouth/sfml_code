@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1693924571 source:/home/jamesstrouth/workspace/sfml_code/firstApp/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+
