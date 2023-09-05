@@ -132,11 +132,9 @@ int JWS_Game::UpdateStatistics(sf::Time elapsedTime)
 
 	if (m_statisticsUpdateTime >= sf::seconds(1.0f))
 	{
-#if 1
 		m_statisticsText.setString(
 			"Frames / Second = " + toString(m_statisticsNumFrames) + "\n" +
 			"Time / Update = " + toString(m_statisticsUpdateTime.asMicroseconds() / m_statisticsNumFrames) + "us");
-#endif
 		m_statisticsUpdateTime -= sf::seconds(1.0f);
 		m_statisticsNumFrames = 0;
 	}
@@ -176,8 +174,6 @@ int JWS_Game::Update(sf::Time deltaTime)
     }
 
     m_playerE.move(movement * deltaTime.asSeconds());
-    //m_playerRap.move(movement * deltaTime.asSeconds());
-    //mPlayerE.rotate(mEAng++);
 
     return 0;
 }
@@ -186,10 +182,18 @@ int JWS_Game::HandlePayerInput(sf::Keyboard::Key key, bool isPressed)
 {
     switch(key)
     {
-    case sf::Keyboard::W: m_IsMovingUp = isPressed; break;
-    case sf::Keyboard::S: m_IsMovingDown = isPressed; break;
-    case sf::Keyboard::A: m_IsMovingLeft = isPressed; break;
-    case sf::Keyboard::D: m_IsMovingRight = isPressed; break;
+    case sf::Keyboard::W:
+        m_IsMovingUp = isPressed;
+        break;
+    case sf::Keyboard::S:
+        m_IsMovingDown = isPressed;
+        break;
+    case sf::Keyboard::A:
+        m_IsMovingLeft = isPressed;
+        break;
+    case sf::Keyboard::D:
+        m_IsMovingRight = isPressed;
+        break;
     }
 
     return 0;
