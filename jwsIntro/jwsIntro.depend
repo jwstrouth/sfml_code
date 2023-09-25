@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1695559442 source:/home/jamesstrouth/workspace/sfml_code/jwsIntro/main.cpp
+	<SFML/Graphics.hpp>
+	<jwsGame.h>
+
+1695564609 source:/home/jamesstrouth/workspace/sfml_code/jwsIntro/jwsGame.cpp
+	"jwsGame.h"
+
+1695564746 /home/jamesstrouth/workspace/sfml_code/jwsIntro/jwsGame.h
+	<SFML/Graphics.hpp>
+
+1695647577 /home/jamesstrouth/workspace/sfml_code/jwsIntro//jwsGame.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
