@@ -15,10 +15,14 @@ Installed SFML under Fedora 38 and using CodeBlocks IDE for developing code.
 - lsfml-system
 - lsfml-audio
 
+## Linker setting for OpenGL
+- lGL
+
 ## Applications
 
 - firstApp
 - Ch1Ex1
+- OpenGLExa
 
 ## References
 
@@ -26,3 +30,6 @@ Installed SFML under Fedora 38 and using CodeBlocks IDE for developing code.
 Jan Haller
 
 - SFML Documentation https://www.sfml-dev.org/documentation/2.6.0/index.php
+
+- https://cs.lmu.edu/~ray/notes/openglexamples/
+  
