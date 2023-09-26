@@ -21,7 +21,9 @@ void jwsResourceHolder<Resource, Identifier>::Load(Identifier id, const std::str
 	// Create and load resource
 	std::unique_ptr<Resource> resource(new Resource());
 	if (!resource->loadFromFile(filename))
+	{
 		throw std::runtime_error("ResourceHolder::load - Failed to load " + filename);
+    }
 
 	// If loading successful, insert resource to map
 	InsertResource(id, std::move(resource));
@@ -34,7 +36,9 @@ void jwsResourceHolder<Resource, Identifier>::Load(Identifier id, const std::str
 	// Create and load resource
 	std::unique_ptr<Resource> resource(new Resource());
 	if (!resource->loadFromFile(filename, secondParam))
+	{
 		throw std::runtime_error("ResourceHolder::load - Failed to load " + filename);
+    }
 
 	// If loading successful, insert resource to map
 	InsertResource(id, std::move(resource));
