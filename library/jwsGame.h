@@ -3,22 +3,10 @@
 
 #include <SFML/Graphics.hpp>
 
-#include <jwsResourceHolder.h>
-
 #include <iostream>
 using namespace std;
 
-// Resource ID for sf::Texture
-namespace Textures
-{
-	enum ID
-	{
-		Landscape,
-		Airplane,
-	};
-}
-
-class jwsGame
+class jwsGame: private sf::NonCopyable
 {
     public:
         jwsGame();
@@ -37,9 +25,9 @@ class jwsGame
         sf::RenderWindow                                m_window;
         //sf::Texture         m_texture;
         sf::Sprite                                      m_player;
-        jwsResourceHolder<sf::Texture, Textures::ID>    m_textures;
-        sf::Sprite                                      *m_landscape;
-        sf::Sprite                                      *m_airplane;
+
+        //sf::Sprite                                      *m_landscape;
+        //sf::Sprite                                      *m_airplane;
 };
 
 #endif // JWSGAME_H

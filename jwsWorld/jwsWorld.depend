@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1695762719 source:/home/jamesstrouth/workspace/sfml_code/library/jwsGame.cpp
+	"jwsGame.h"
+
+1695762783 /home/jamesstrouth/workspace/sfml_code/library/jwsGame.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1695675495 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.h
+	<map>
+	<string>
+	<memory>
+	<stdexcept>
+	<cassert>
+	<jwsResourceHolder.cpp>
+
+1695694751 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.cpp
+	"jwsResourceHolder.h"
+
+1695694751 source:/home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.cpp
+	"jwsResourceHolder.h"
+
+1695760609 source:/home/jamesstrouth/workspace/sfml_code/jwsWorld/main.cpp
+	<SFML/Graphics.hpp>
+	<jwsGame.h>
+
+1695762683 source:/home/jamesstrouth/workspace/sfml_code/library/jwsWorld.cpp
+	"jwsWorld.h"
+
+1695762968 /home/jamesstrouth/workspace/sfml_code/library/jwsWorld.h
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics.hpp>
+	<jwsResourceHolder.h>
+

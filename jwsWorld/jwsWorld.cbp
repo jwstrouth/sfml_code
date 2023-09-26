@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jwsWorld" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="jwsWorld" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/jamesstrouth/workspace/sfml_code/SFMLExa/.objs" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../library" />
+					<Add directory="library" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="jwsWorld" prefix_auto="1" extension_auto="1" />
+				<Option object_output="/home/jamesstrouth/workspace/sfml_code/SFMLExa/.objs" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="library" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../library/jwsGame.cpp" />
+		<Unit filename="../library/jwsGame.h" />
+		<Unit filename="../library/jwsResourceHolder.cpp" />
+		<Unit filename="../library/jwsResourceHolder.h" />
+		<Unit filename="../library/jwsWorld.cpp" />
+		<Unit filename="../library/jwsWorld.h" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
