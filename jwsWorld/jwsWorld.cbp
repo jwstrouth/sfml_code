@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=gnu++11" />
 					<Add option="-g" />
 					<Add directory="../library" />
 					<Add directory="library" />
@@ -42,10 +43,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../library/Foreach.hpp" />
+		<Unit filename="../library/jwsAircraft.cpp" />
+		<Unit filename="../library/jwsAircraft.h" />
+		<Unit filename="../library/jwsEntity.cpp" />
+		<Unit filename="../library/jwsEntity.h" />
 		<Unit filename="../library/jwsGame.cpp" />
 		<Unit filename="../library/jwsGame.h" />
 		<Unit filename="../library/jwsResourceHolder.cpp" />
 		<Unit filename="../library/jwsResourceHolder.h" />
+		<Unit filename="../library/jwsResourceIdentifier.h" />
+		<Unit filename="../library/jwsSceneNode.cpp" />
+		<Unit filename="../library/jwsSceneNode.h" />
+		<Unit filename="../library/jwsSpriteNode.cpp" />
+		<Unit filename="../library/jwsSpriteNode.h" />
 		<Unit filename="../library/jwsWorld.cpp" />
 		<Unit filename="../library/jwsWorld.h" />
 		<Unit filename="cb.bmp" />

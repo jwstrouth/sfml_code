@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1695762719 source:/home/jamesstrouth/workspace/sfml_code/library/jwsGame.cpp
+1695842683 source:/home/jamesstrouth/workspace/sfml_code/library/jwsGame.cpp
 	"jwsGame.h"
 
-1695762783 /home/jamesstrouth/workspace/sfml_code/library/jwsGame.h
+1695831898 /home/jamesstrouth/workspace/sfml_code/library/jwsGame.h
 	<SFML/Graphics.hpp>
 	<iostream>
+	<jwsWorld.h>
 
 1695675495 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.h
 	<map>
@@ -24,11 +25,61 @@
 	<SFML/Graphics.hpp>
 	<jwsGame.h>
 
-1695762683 source:/home/jamesstrouth/workspace/sfml_code/library/jwsWorld.cpp
+1695848388 source:/home/jamesstrouth/workspace/sfml_code/library/jwsWorld.cpp
 	"jwsWorld.h"
 
-1695762968 /home/jamesstrouth/workspace/sfml_code/library/jwsWorld.h
+1695847773 /home/jamesstrouth/workspace/sfml_code/library/jwsWorld.h
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics.hpp>
+	<iostream>
+	<array>
 	<jwsResourceHolder.h>
+	<jwsSceneNode.h>
+	<jwsSpriteNode.h>
+	<jwsResourceIdentifier.h>
+	<jwsAircraft.h>
+
+1695834009 source:/home/jamesstrouth/workspace/sfml_code/library/jwsSceneNode.cpp
+	"jwsSceneNode.h"
+	<Foreach.hpp>
+	<algorithm>
+	<cassert>
+
+1695832690 /home/jamesstrouth/workspace/sfml_code/library/jwsSceneNode.h
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<memory>
+	<iostream>
+
+1370636038 /home/jamesstrouth/workspace/sfml_code/library/Foreach.hpp
+
+1695833380 source:/home/jamesstrouth/workspace/sfml_code/library/jwsEntity.cpp
+	"jwsEntity.h"
+
+1695832611 /home/jamesstrouth/workspace/sfml_code/library/jwsEntity.h
+	<jwsSceneNode.h>
+
+1695845979 source:/home/jamesstrouth/workspace/sfml_code/library/jwsSpriteNode.cpp
+	"jwsSpriteNode.h"
+	<SFML/Graphics/RenderTarget.hpp>
+
+1695835610 /home/jamesstrouth/workspace/sfml_code/library/jwsSpriteNode.h
+	<SFML/Graphics/Sprite.hpp>
+	<jwsSceneNode.h>
+
+1695847638 source:/home/jamesstrouth/workspace/sfml_code/library/jwsAircraft.cpp
+	"jwsAircraft.h"
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+
+1695847348 /home/jamesstrouth/workspace/sfml_code/library/jwsAircraft.h
+	<jwsEntity.h>
+	<jwsResourceHolder.h>
+	<jwsResourceIdentifier.h>
+	<SFML/Graphics/Sprite.hpp>
+
+1695847195 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceIdentifier.h
 

@@ -43,11 +43,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../library/jwsGame.cpp" />
-		<Unit filename="../library/jwsGame.h" />
 		<Unit filename="../library/jwsResourceHolder.cpp" />
 		<Unit filename="../library/jwsResourceHolder.h" />
 		<Unit filename="cb.bmp" />
+		<Unit filename="jwsGame.cpp" />
+		<Unit filename="jwsGame.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

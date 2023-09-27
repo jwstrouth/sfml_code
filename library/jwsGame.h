@@ -4,6 +4,9 @@
 #include <SFML/Graphics.hpp>
 
 #include <iostream>
+
+#include <jwsWorld.h>
+
 using namespace std;
 
 class jwsGame: private sf::NonCopyable
@@ -18,16 +21,16 @@ class jwsGame: private sf::NonCopyable
 
     private:
         void ProcessEvents();
-        void Update();
+        void Update(sf::Time elapsedTime);
         void Render();
+        void HandlePlayerInput(sf::Keyboard::Key key, bool isPressed);
 
     private:
-        sf::RenderWindow                                m_window;
-        //sf::Texture         m_texture;
-        sf::Sprite                                      m_player;
+        static const sf::Time	TimePerFrame;
+        sf::RenderWindow        m_window;
+        sf::Sprite              m_player;
+        jwsWorld                m_world;
 
-        //sf::Sprite                                      *m_landscape;
-        //sf::Sprite                                      *m_airplane;
 };
 
 #endif // JWSGAME_H

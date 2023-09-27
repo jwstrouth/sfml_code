@@ -4,19 +4,14 @@
 #include <SFML/System/NonCopyable.hpp>
 #include <SFML/Graphics.hpp>
 
+#include <iostream>
+#include <array>
+
 #include <jwsResourceHolder.h>
-
-// Resource ID for sf::Texture
-namespace Textures
-{
-	enum ID
-	{
-		Desert,
-		Airplane,
-	};
-}
-
-typedef jwsResourceHolder<sf::Texture, Textures::ID> TextureHolder;
+#include <jwsSceneNode.h>
+#include <jwsSpriteNode.h>
+#include <jwsResourceIdentifier.h>
+#include <jwsAircraft.h>
 
 class jwsWorld: private sf::NonCopyable
 {
@@ -24,7 +19,8 @@ class jwsWorld: private sf::NonCopyable
         jwsWorld(sf::RenderWindow &window);
         virtual ~jwsWorld();
 
-        void Draw();
+        void    Draw();
+        void    Update(sf::Time dt);
 
     protected:
 
@@ -33,9 +29,23 @@ class jwsWorld: private sf::NonCopyable
         void	BuildScene();
 
     private:
-        sf::RenderWindow&   m_window;
-        sf::View			m_worldView;
-        TextureHolder       m_textures;
+        enum Layer
+		{
+			Background,
+			Air,
+			LayerCount
+		};
+
+    private:
+        sf::RenderWindow&                       m_window;
+        sf::View			                    m_worldView;
+        TextureHolder                           m_textures;
+        jwsSceneNode                            m_sceneGraph;
+        std::array<jwsSceneNode*, LayerCount>	m_sceneLayers;
+        sf::FloatRect						    m_worldBounds;
+        float                                   m_scrollSpeed;
+        sf::Vector2f                            m_spawnPosition;
+        jwsAircraft                             *m_aircraft;
 };
 
 #endif // JWSWORLD_H
