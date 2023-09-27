@@ -4,15 +4,15 @@
 	"jwsGame.h"
 	<iostream>
 
-1695676794 source:/home/jamesstrouth/workspace/sfml_code/library/jwsGame.cpp
+1695840301 source:/home/jamesstrouth/workspace/sfml_code/library/jwsGame.cpp
 	"jwsGame.h"
 
-1695676618 /home/jamesstrouth/workspace/sfml_code/library/jwsGame.h
+1695831898 /home/jamesstrouth/workspace/sfml_code/library/jwsGame.h
 	<SFML/Graphics.hpp>
-	<jwsResourceHolder.h>
 	<iostream>
+	<jwsWorld.h>
 
-1695675723 source:/home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.cpp
+1695694751 source:/home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.cpp
 	"jwsResourceHolder.h"
 
 1695675495 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.h
@@ -25,4 +25,39 @@
 
 1695694751 /home/jamesstrouth/workspace/sfml_code/library/jwsResourceHolder.cpp
 	"jwsResourceHolder.h"
+
+1695839218 /home/jamesstrouth/workspace/sfml_code/library/jwsWorld.h
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<array>
+	<jwsResourceHolder.h>
+	<jwsSceneNode.h>
+	<jwsSpriteNode.h>
+
+1695832690 /home/jamesstrouth/workspace/sfml_code/library/jwsSceneNode.h
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<memory>
+	<iostream>
+
+1695835610 /home/jamesstrouth/workspace/sfml_code/library/jwsSpriteNode.h
+	<SFML/Graphics/Sprite.hpp>
+	<jwsSceneNode.h>
+
+1695841160 source:/home/jamesstrouth/workspace/sfml_code/jwsResources/jwsWorld.cpp
+	"jwsWorld.h"
+
+1695841182 /home/jamesstrouth/workspace/sfml_code/jwsResources/jwsWorld.h
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics.hpp>
+	<jwsResourceHolder.h>
+
+1695842003 /home/jamesstrouth/workspace/sfml_code/jwsResources/jwsGame.h
+	<SFML/Graphics.hpp>
+	<jwsResourceHolder.h>
+	<iostream>
 
